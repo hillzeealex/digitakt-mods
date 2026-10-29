@@ -267,6 +267,14 @@ def faders(d):
     d.line((0, 15, 15, 15), 1)
 
 
+def plaits(d):  # le gros bouton MODEL et ses modèles tout autour
+    d.ellipse((4, 4, 11, 11), outline=1)
+    d.line([(7, 8), (9, 6)], 1)
+    d.line([(8, 8), (10, 6)], 1)
+    for x, y in ((7, 0), (12, 2), (14, 7), (12, 12), (7, 14), (2, 12), (0, 7), (2, 2)):
+        d.rectangle((x, y, x + 1, y + 1), fill=1)
+
+
 ICONS = {
     'digitakt-mk1': {
         'core': chip, 'machine-pages': pages, 'digislicer': slicer, 'digihealth': health,
@@ -276,7 +284,7 @@ ICONS = {
         'digistring-fast': string_fast, 'dt-fm': fm, 'ob1': ob1, 'seq-events': events,
         'digiseq-dt': steps, 'digisnake-dt': snake,
     },
-    'digitakt-ii': {'core': chip, 'perform-direct': press, 'perform-levels': faders},
+    'digitakt-ii': {'core': chip, 'perform-direct': press, 'perform-levels': faders, 'plaits': plaits},
 }
 
 

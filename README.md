@@ -85,9 +85,14 @@ processeur audio, et elles ne sont pas portées. Voici ce qui existe aujourd'hui
 | <img src="docs/icons/perform-direct-dt2.svg" width="40"> | **perform-direct** | [PRESET] seul active PERFORM KIT ; FUNC + PRESET ouvre le menu PRESET/KIT | [1.17](https://github.com/hillzeealex/digitakt-mods/releases/latest/download/perform-direct-1.0.elemod) |
 | <img src="docs/icons/perform-levels-dt2.svg" width="40"> | **perform-levels** | les niveaux de piste réglés en PERFORM KIT restent quand tu en sors | [1.17](https://github.com/hillzeealex/digitakt-mods/releases/latest/download/perform-levels-1.0.elemod) |
 
-Deux autres projets ajoutent des synthés à la Digitakt II : [digikit](https://github.com/ElekLabs/digikit) (PLUCK) et
-l'[All-in-One](https://github.com/karigardarsson/digitakt-ii-research) (Plaits, DX7). Ils **ne se combinent ni avec
-ces mods ni entre eux** : on en installe un seul à la fois. Le pourquoi et le comment sont dans
+Et à la place de ces mods (pas en plus), des synthés :
+
+| | projet | ce que ça fait | comment |
+|---|---|---|---|
+| <img src="docs/icons/plaits-dt2.svg" width="40"> | **Plaits + DX7** ([All-in-One](https://github.com/karigardarsson/digitakt-ii-research) v0.3.0, bêta) | machine PLAITS à 25 modèles, 4 banques DX7, Musical WAVE / Déjà Vu, Zoom ONESHOT | Windows : l'outil de l'auteur · Mac : `tools/build-plaits.sh` |
+
+[digikit](https://github.com/ElekLabs/digikit) ajoute aussi PLUCK (corde pincée). Ces projets **ne se combinent ni
+avec les mods elekloader ni entre eux** : on en installe un seul à la fois. Le pourquoi et le comment sont dans
 [docs/DIGITAKT-II.md](docs/DIGITAKT-II.md).
 
 ## Pour les développeurs

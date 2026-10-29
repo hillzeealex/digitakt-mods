@@ -2,6 +2,49 @@
  "about": "Une entrée par fichier .elemod. source = repo@ref amont, url = d'où sync.py le retélécharge, sha256 = le fichier attendu.",
  "mods": [
   {
+   "device": "digitakt-ii",
+   "os": "1.17",
+   "id": "core",
+   "version": "1.0",
+   "license": "GPL-2.0-or-later",
+   "requires": [],
+   "conflicts": [],
+   "source": "toonst/digitakt2-perform@v1.0",
+   "url": "https://github.com/toonst/digitakt2-perform/releases/download/v1.0/core-1.0.elemod",
+   "path": "elemods/digitakt-ii/1.17/core-1.0.elemod",
+   "sha256": "95303655a9358f581b485acb68b884b394a577f5d0b373f0a3e5957c8d0ca72c"
+  },
+  {
+   "device": "digitakt-ii",
+   "os": "1.17",
+   "id": "perform-direct",
+   "version": "1.0",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "toonst/digitakt2-perform@v1.0",
+   "url": "https://github.com/toonst/digitakt2-perform/releases/download/v1.0/perform-direct-1.0.elemod",
+   "path": "elemods/digitakt-ii/1.17/perform-direct-1.0.elemod",
+   "sha256": "601b187f5af3025234c83e8c077b1e8f4ac755a8f1a8c929ab03aff331f30732"
+  },
+  {
+   "device": "digitakt-ii",
+   "os": "1.17",
+   "id": "perform-levels",
+   "version": "1.0",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "toonst/digitakt2-perform@v1.0",
+   "url": "https://github.com/toonst/digitakt2-perform/releases/download/v1.0/perform-levels-1.0.elemod",
+   "path": "elemods/digitakt-ii/1.17/perform-levels-1.0.elemod",
+   "sha256": "bb100389f2800401495ca3fa3a52d5974bb00434a8a70fd6f89978ec6b25d9e6"
+  },
+  {
    "device": "digitakt-mk1",
    "os": "1.53",
    "id": "core",

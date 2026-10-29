@@ -37,6 +37,12 @@ trouver. elekloader part de **ton** fichier OS officiel, vérifie que les mods c
 
 Mettre à jour un mod : modifie son entrée dans `mods.json` (url et sha256), puis lance `python3 tools/sync.py`.
 
+## Appareils
+
+- [Digitakt mk1, OS 1.53 / 1.54](docs/DIGITAKT-MK1.md) : 22 mods, conflits et budget RAM.
+- [Digitakt II, OS 1.17](docs/DIGITAKT-II.md) : les mods elekloader (PERFORM KIT), et pourquoi digikit et All-in-One
+  ne se combinent ni avec eux ni entre eux.
+
 ## Récupération
 
 Si un OS custom ne démarre pas, maintiens **FUNC** à l'allumage pour ouvrir le menu de démarrage, appuie sur

@@ -307,7 +307,31 @@ def name(device, mod_id):
     return mod_id if device == 'digitakt-mk1' else '%s-dt2' % mod_id
 
 
+BUTTONS = {  # nom : (titre, sous-titre, plein = téléchargement / contour = lien vers un site)
+    'btn-os-dt': ('Télécharger l\'OS officiel', 'Digitakt · OS 1.54 · site Elektron', True),
+    'btn-pack-dt': ('Télécharger le pack de mods', 'Digitakt · 8 mods · SLICER, POLY, STRING…', True),
+    'btn-os-dt2': ('Télécharger l\'OS officiel', 'Digitakt II · OS 1.17 · site Elektron', True),
+    'btn-pack-dt2': ('Télécharger le pack de mods', 'Digitakt II · PERFORM KIT', True),
+    'btn-transfer': ('Installer Elektron Transfer', 'gratuit · Mac et Windows', False),
+    'btn-elekloader': ('Ouvrir elekloader', 'le site qui fabrique ton OS', False),
+}
+
+
+def button(title, sub, filled):
+    fg, bg = ('#1b1808', '#ffe23a') if filled else ('#ffe23a', '#1b1808')
+    arrow = ('M34 22v26m-11-11 11 11 11-11M22 56h24' if filled else 'M24 38h22m-9-9 9 9-9 9')
+    return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 76" width="440" height="76" role="img">'
+            '<title>%s, %s</title><rect x="1.5" y="1.5" width="437" height="73" rx="16" fill="%s" stroke="#ffe23a" stroke-width="3"/>'
+            '<path d="%s" stroke="%s" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'
+            '<g font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" fill="%s">'
+            '<text x="70" y="34" font-size="22" font-weight="800">%s</text>'
+            '<text x="70" y="58" font-size="15" font-weight="500">%s</text></g></svg>\n'
+            % (title, sub, bg, arrow, fg, fg, title, sub))
+
+
 def main(argv):
+    for n, (title, sub, filled) in BUTTONS.items():
+        (ROOT / 'docs' / 'img' / ('%s.svg' % n)).write_text(button(title, sub, filled))
     out = ROOT / 'docs' / 'icons'
     out.mkdir(parents=True, exist_ok=True)
     tiles = []

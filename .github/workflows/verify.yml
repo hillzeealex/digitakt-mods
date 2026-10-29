@@ -9,6 +9,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python3 -m unittest discover -s tests -v
+      - run: node --test tests/*.mjs
       - run: python3 tools/sync.py --verify
       - name: Aucun firmware Elektron commité
         run: "! git ls-files | grep -iE '\\.(syx|zip|bin)$'"

@@ -15,7 +15,8 @@ vérifiés ensemble, en packs prêts à installer.
 
 **Pour les installer, en une ligne :** télécharge l'OS officiel de ta machine et un [pack](#les-packs), glisse les deux
 sur [elekloader.github.io/elekloader](https://elekloader.github.io/elekloader/), clique sur **Build**, puis envoie le
-`.syx` obtenu à la Digitakt avec Elektron Transfer.
+`.syx` obtenu à la Digitakt avec Elektron Transfer, ou directement depuis
+[la page d'envoi](https://hillzeealex.github.io/digitakt-mods/envoyer.html) (Chrome ou Edge).
 
 ![Les 4 étapes](docs/img/flow.svg)
 

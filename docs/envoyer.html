@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Envoyer ton OS</title>
+<meta name="description" content="Envoie ton OS moddé à la Digitakt depuis le navigateur, sans installer Elektron Transfer.">
+<style>
+  :root {
+    --bg: #f6f5f0; --card: #ffffff; --ink: #1b1808; --muted: #5c5a50; --line: #dddbd0;
+    --accent: #ffe23a; --accent-ink: #1b1808; --bad: #b3261e; --good: #1e7a3c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141414; --card: #1f1f1f; --ink: #f2f2f2; --muted: #a8a8a0; --line: #333;
+      --bad: #ff8a80; --good: #7fd69a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141414; --card: #1f1f1f; --ink: #f2f2f2; --muted: #a8a8a0; --line: #333;
+    --bad: #ff8a80; --good: #7fd69a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
+  .lead { color: var(--muted); margin: 0 0 24px; }
+  .step {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 16px; margin: 0 0 12px;
+  }
+  .step h2 { font-size: 18px; margin: 0 0 6px; display: flex; gap: 10px; align-items: center; }
+  .num {
+    flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--accent); color: var(--accent-ink); font-size: 15px;
+  }
+  .step p { margin: 6px 0; }
+  .step[aria-disabled="true"] { opacity: .45; }
+  button, .file {
+    font: inherit; font-weight: 600; border: 0; border-radius: 10px; cursor: pointer;
+    background: var(--accent); color: var(--accent-ink); padding: 12px 18px; min-height: 48px;
+    display: inline-block;
+  }
+  button.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+  button:disabled { opacity: .5; cursor: default; }
+  button:focus-visible, .file:focus-within, select:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+  .file input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  select { font: inherit; padding: 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--ink); max-width: 100%; }
+  kbd { font: 600 14px ui-monospace, Menlo, monospace; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 1px 5px; }
+  .msg { margin: 8px 0 0; font-weight: 600; }
+  .msg.bad { color: var(--bad); }
+  .msg.good { color: var(--good); }
+  progress { width: 100%; height: 14px; accent-color: var(--accent); }
+  .warn { border-left: 4px solid var(--accent); padding: 4px 12px; color: var(--muted); }
+  a { color: inherit; }
+  footer { color: var(--muted); font-size: 14px; margin-top: 24px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Envoyer ton OS à la Digitakt</h1>
+  <p class="lead">Directement depuis cette page, sans installer Elektron Transfer. Marche avec Chrome ou Edge sur un
+    ordinateur.</p>
+
+  <p id="nomidi" class="msg bad" hidden>Ce navigateur ne sait pas parler à la Digitakt (c'est le cas de Safari et de
+    l'iPhone). Ouvre cette page dans <b>Chrome</b> ou <b>Edge</b> sur un ordinateur, ou utilise
+    <a href="https://www.elektron.se/support-downloads/transfer">Elektron Transfer</a>.</p>
+
+  <section class="step">
+    <h2><span class="num">1</span> Prépare la machine</h2>
+    <p>Branche-la à l'ordinateur en USB. Sur la machine, appuie sur <kbd>SETTINGS</kbd>, va dans
+      <b>SYSTEM</b>, puis <b>OS UPGRADE</b>.</p>
+  </section>
+
+  <section class="step" id="s2">
+    <h2><span class="num">2</span> Connecte-la à la page</h2>
+    <p><button id="connect">Connecter la Digitakt</button></p>
+    <p id="pick" hidden><label>Elle apparaît sous le nom : <select id="port"></select></label></p>
+    <p id="m2" class="msg" role="status"></p>
+  </section>
+
+  <section class="step" id="s3" aria-disabled="true">
+    <h2><span class="num">3</span> Choisis ton fichier <code>.syx</code></h2>
+    <p>Celui qu'elekloader a téléchargé (souvent dans <b>Téléchargements</b>).</p>
+    <p><label class="file"><input id="file" type="file" accept=".syx" disabled>Choisir le fichier</label></p>
+    <p id="m3" class="msg" role="status"></p>
+  </section>
+
+  <section class="step" id="s4" aria-disabled="true">
+    <h2><span class="num">4</span> Envoie</h2>
+    <p class="warn">Garde cette page ouverte et au premier plan, et ne débranche rien pendant l'envoi.</p>
+    <p><button id="send" disabled>Envoyer</button> <button id="stop" class="ghost" hidden>Arrêter</button></p>
+    <p id="bar" hidden><progress id="progress" value="0" max="1"></progress></p>
+    <p id="m4" class="msg" role="status" aria-live="polite"></p>
+  </section>
+
+  <footer>
+    <p>Si la machine ne démarre plus, voir <a href="./#si-ca-plante">Si ça plante</a> dans le guide.</p>
+    <p>Tout se passe dans ton navigateur : ton fichier n'est envoyé nulle part ailleurs qu'à la Digitakt.</p>
+    <p><a href="./">Retour au guide</a></p>
+  </footer>
+</main>
+
+<script type="module">
+import { parseOs, PACE_MS } from './sysex.js';
+
+const $ = (id) => document.getElementById(id);
+const say = (el, text, kind = '') => { el.textContent = text; el.className = 'msg ' + kind; };
+const enable = (id, on) => $(id).setAttribute('aria-disabled', String(!on));
+const minutes = (s) => (s < 60 ? 'moins d’une minute' : `environ ${Math.round(s / 60)} min`);
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+let midi = null, os = null, stopped = false;
+
+if (!navigator.requestMIDIAccess) {
+  $('nomidi').hidden = false;
+  $('connect').disabled = true;
+}
+
+function output() {
+  return midi && midi.outputs.get($('port').value);
+}
+
+function ready() {
+  const ok = Boolean(output() && os);
+  $('send').disabled = !ok;
+  enable('s4', ok);
+}
+
+function fillPorts() {
+  const sel = $('port'), outs = [...midi.outputs.values()];
+  sel.replaceChildren(...outs.map((o) => new Option(o.name, o.id)));
+  const dt = outs.find((o) => /digitakt|elektron/i.test(o.name));
+  if (dt) sel.value = dt.id;
+  $('pick').hidden = outs.length === 0;
+  if (outs.length === 0) say($('m2'), 'Aucune machine trouvée. Vérifie le câble USB et que la Digitakt est allumée.', 'bad');
+  else say($('m2'), dt ? 'Digitakt trouvée.' : 'Choisis la Digitakt dans la liste.', dt ? 'good' : '');
+  $('file').disabled = outs.length === 0;
+  enable('s3', outs.length > 0);
+  ready();
+}
+
+$('connect').onclick = async () => {
+  try {
+    midi = await navigator.requestMIDIAccess({ sysex: true });
+  } catch {
+    say($('m2'), 'Accès refusé. Clique sur le cadenas à gauche de l’adresse, autorise « Appareils MIDI », puis recharge la page.', 'bad');
+    return;
+  }
+  midi.onstatechange = fillPorts;
+  fillPorts();
+};
+
+$('port').onchange = ready;
+
+$('file').onchange = async (e) => {
+  const f = e.target.files[0];
+  os = null;
+  if (f) {
+    try {
+      os = parseOs(new Uint8Array(await f.arrayBuffer()));
+      say($('m3'), `OS pour ${os.device}, fichier complet. Envoi : ${minutes(os.seconds)}.`, 'good');
+    } catch (err) {
+      say($('m3'), `Ce fichier ne peut pas être envoyé : ${err.message}.`, 'bad');
+    }
+  }
+  ready();
+};
+
+$('send').onclick = async () => {
+  const out = output(), msgs = os.msgs;
+  let lock = null;
+  try { lock = await navigator.wakeLock?.request('screen'); } catch { /* l'écran peut se mettre en veille, l'envoi continue */ }
+  stopped = false;
+  $('send').disabled = true; $('stop').hidden = false; $('bar').hidden = false;
+  $('port').disabled = true; $('file').disabled = true;
+  say($('m4'), 'Envoi en cours…');
+  try {
+    // Les messages sont confiés au navigateur avec leur heure de départ, 2 s à l'avance,
+    // pour que le rythme tienne même si l'onglet ralentit ses minuteurs.
+    let at = performance.now() + 300, i = 0;
+    while (i < msgs.length) {
+      if (stopped) throw new Error('stop');
+      if (out.state === 'disconnected') throw new Error('débranchée');
+      at = Math.max(at, performance.now());
+      for (; i < msgs.length && at < performance.now() + 2000; i++, at += PACE_MS) out.send(msgs[i], at);
+      $('progress').value = i / msgs.length;
+      const left = Math.ceil(((msgs.length - i) * PACE_MS) / 1000);
+      say($('m4'), `Envoi en cours… ${Math.floor((100 * i) / msgs.length)} %, encore ${minutes(left)}.`);
+      await sleep(250);
+    }
+    await sleep(Math.max(0, at - performance.now()) + 500);
+    $('progress').value = 1;
+    say($('m4'), 'Envoyé. Si la machine demande de confirmer, appuie sur YES. Elle redémarre toute seule.', 'good');
+  } catch (err) {
+    out.clear?.();
+    say($('m4'), err.message === 'stop'
+      ? 'Arrêté. Éteins la machine et rallume-la : elle n’a pas reçu la fin, elle devrait garder son ancien OS.'
+      : 'La Digitakt a été débranchée. Éteins-la, rallume-la et recommence.', 'bad');
+  } finally {
+    lock?.release();
+    $('stop').hidden = true; $('port').disabled = false; $('file').disabled = false;
+    ready();
+  }
+};
+
+$('stop').onclick = () => { stopped = true; };
+</script>
+</body>
+</html>

@@ -40,6 +40,8 @@ Clique sur **Digitakt**. Glisse le fichier Elektron, puis les 8 fichiers du pack
 Branche-la en USB et ouvre **Transfer**. Glisse le `.syx` dans la fenêtre, puis appuie sur **YES** sur la machine.
 Elle redémarre toute seule.
 
+Pas de Transfer ? [Envoie-le depuis cette page](envoyer.html), avec Chrome ou Edge sur ordinateur (nouveau).
+
 **4. Joue**
 
 Maintiens **FUNC** et appuie sur **SRC**. Choisis une machine avec les flèches **HAUT** / **BAS**, puis appuie sur

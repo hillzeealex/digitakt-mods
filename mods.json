@@ -1,4 +1,723 @@
 {
-  "about": "Une entrée par fichier .elemod. source = repo@ref amont, url = d'où sync.py le retélécharge, sha256 = le fichier attendu.",
-  "mods": []
+ "about": "Une entrée par fichier .elemod. source = repo@ref amont, url = d'où sync.py le retélécharge, sha256 = le fichier attendu.",
+ "mods": [
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "core",
+   "version": "4.0",
+   "license": "GPL-2.0-or-later",
+   "requires": [],
+   "conflicts": [],
+   "source": "elekloader/elekloader@core-v4.0",
+   "url": "https://github.com/elekloader/elekloader/releases/download/core-v4.0/core-4.0.elemod",
+   "path": "elemods/digitakt-mk1/1.53/core-4.0.elemod",
+   "sha256": "5f578843cf162621e09c92fdbfb5d92a162430eaa5f90c09d70d97ef7699fa61"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digi101",
+   "version": "0.25",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "machine-pages",
+    "digimono"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digi101-0.25.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digi101-0.25.elemod",
+   "sha256": "ea7c3956baeeb2de30e7d233c1da182471f376fd9d5823c58268683af331fddf"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digieq",
+   "version": "1.0c",
+   "license": "MIT",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digieq-1.0c.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digieq-1.0c.elemod",
+   "sha256": "eb5c75fbc5b1ecda248f205730d2b7d9e129a52a9c19bccf3ef47ed4c78e712f"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digifilter",
+   "version": "1.1a",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digifilter-1.1a.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digifilter-1.1a.elemod",
+   "sha256": "86e302abe22134347e427c4626971ee223d666f072e5e163385f3bad31c187be"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digihealth",
+   "version": "1.0",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "irpina/digihealth@v1.1.1",
+   "url": "https://github.com/irpina/digihealth/releases/download/v1.1.1/digihealth-1.0.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digihealth-1.0.elemod",
+   "sha256": "b2ce4d6ad0bea1623f59b53c359860573f99ab1bfb55d20c224a623f27d135c2"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digimacro",
+   "version": "1.2",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "machine-pages",
+    "digimono"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digimacro-1.2.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digimacro-1.2.elemod",
+   "sha256": "76803565917a2660611f720ee020a2a28a81726687951bab21ae91c5795fa1f6"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digimatrix",
+   "version": "1.0c",
+   "license": "MIT",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digimatrix-1.0c.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digimatrix-1.0c.elemod",
+   "sha256": "dc2c9d32dde13e759e923a0d94a99c6fb1a7571434cc89ed3fd37deaaef5c2af"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digimono",
+   "version": "0.24",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "machine-pages"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digimono-0.24.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digimono-0.24.elemod",
+   "sha256": "8e4dd3ae443f85d6e70b686c4f3565c0c534f5d4efd677b8c3c64aceb25557a0"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digineighbor",
+   "version": "0.7",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core",
+    "machine-pages"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digineighbor-0.7.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digineighbor-0.7.elemod",
+   "sha256": "cae48c35a37e1d8e34c04a98273c9346cc90a3ea0c848e70e43ca58d24dbba0c"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digipoly",
+   "version": "2.1",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "machine-pages"
+   ],
+   "conflicts": [
+    "dt8poly"
+   ],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digipoly-2.1.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digipoly-2.1.elemod",
+   "sha256": "6fc08067b4e3841618022f4668a3060d205c1c9062da3536ab4799e504cab970"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digiseq-dt",
+   "version": "0.2",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core",
+    "seq-events"
+   ],
+   "conflicts": [],
+   "source": "ClaidArremer/digitakt-digiseq@54355a4",
+   "url": "https://raw.githubusercontent.com/ClaidArremer/digitakt-digiseq/54355a427b5ba1e36f051882b9e2a9daa5cd146d/elemods/digiseq-dt-0.2-os1.53.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digiseq-dt-0.2-os1.53.elemod",
+   "sha256": "f5defd845a8b5d78f078a055ace18e81a228570711a20c91d3aa23d6ef9252b4"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digislicer",
+   "version": "2.5",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core",
+    "machine-pages"
+   ],
+   "conflicts": [],
+   "source": "irpina/digislicer@v2.5",
+   "url": "https://github.com/irpina/digislicer/releases/download/v2.5/digislicer-2.5.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digislicer-2.5.elemod",
+   "sha256": "846a2ec329d5ebd490a5201169d053c7a9b4645a33469f4b33021a38167e658a"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digisnake-dt",
+   "version": "0.3",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core",
+    "seq-events"
+   ],
+   "conflicts": [],
+   "source": "ClaidArremer/digitakt-digisnake@5785a77",
+   "url": "https://raw.githubusercontent.com/ClaidArremer/digitakt-digisnake/5785a7737764d6062ec973c2ae396a91365c6a82/elemods/digisnake-dt-0.3-os1.53.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digisnake-dt-0.3-os1.53.elemod",
+   "sha256": "bce21046e6d1515f7ad85ca40d19e12577c3b84491ccc44a2b699229733ea36d"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digisophie",
+   "version": "1.2.0",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "machine-pages"
+   ],
+   "conflicts": [],
+   "source": "soejrd/digisophie@v1.2.0",
+   "url": "https://github.com/soejrd/digisophie/releases/download/v1.2.0/digisophie-1.2.0.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digisophie-1.2.0.elemod",
+   "sha256": "704ce73d8e86c154bc5085c3f5cc392a50c324820c09e3f46e836d4a184ef82d"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digistring",
+   "version": "0.8.0",
+   "license": "MIT",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [
+    "digistring-fast"
+   ],
+   "source": "Alez22/digistring@v0.8.0",
+   "url": "https://github.com/Alez22/digistring/releases/download/v0.8.0/digistring-0.8.0.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digistring-0.8.0.elemod",
+   "sha256": "7f4360f7d003ecbb1a0e628abf24be7ce4f277c617fa2ddb8a752144613c01ff"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digistring-fast",
+   "version": "0.8.0",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "digihealth"
+   ],
+   "conflicts": [
+    "digistring"
+   ],
+   "source": "Alez22/digistring@v0.8.0",
+   "url": "https://github.com/Alez22/digistring/releases/download/v0.8.0/digistring-fast-0.8.0.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digistring-fast-0.8.0.elemod",
+   "sha256": "dc5257270155d1c0434fde164ee3d0bafb8cc4e5102896f302fa40f46fb960ce"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "digiutils",
+   "version": "1.9a",
+   "license": "MIT",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digiutils-1.9a.elemod",
+   "path": "elemods/digitakt-mk1/1.53/digiutils-1.9a.elemod",
+   "sha256": "8697ac1fe883cb8fc6ee29f441f6172bde5b24506a1a4337358d66106844b5c1"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "dt-fm",
+   "version": "1.2.1",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "machine-pages"
+   ],
+   "conflicts": [],
+   "source": "mtalikka/DT-FM@v1.2.1",
+   "url": "https://github.com/mtalikka/DT-FM/releases/download/v1.2.1/dt-fm-1.2.1-os1.53.elemod",
+   "path": "elemods/digitakt-mk1/1.53/dt-fm-1.2.1-os1.53.elemod",
+   "sha256": "7f0f01f29a87d6a102915f55fcdee57e68eeb747512a904991411c5c0b6643d5"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "machine-pages",
+   "version": "1.2",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [
+    "digichain"
+   ],
+   "source": "irpina/digislicer@v2.5",
+   "url": "https://github.com/irpina/digislicer/releases/download/v2.5/machine-pages-1.2.elemod",
+   "path": "elemods/digitakt-mk1/1.53/machine-pages-1.2.elemod",
+   "sha256": "8526d61694c798bc765ae07b48ff613126d071813e887df516281c17a56c6c94"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "machine-pages",
+   "version": "1.3",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [
+    "digichain"
+   ],
+   "source": "elekloader/elekloader@machine-pages-v1.3",
+   "url": "https://github.com/elekloader/elekloader/releases/download/machine-pages-v1.3/machine-pages-1.3.elemod",
+   "path": "elemods/digitakt-mk1/1.53/machine-pages-1.3.elemod",
+   "sha256": "de8406791685234fd179575483382e304ba0d31b1560ab0241bc328dbafcbd7b"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "seq-events",
+   "version": "0.2",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "ClaidArremer/digitakt-digiseq@54355a4",
+   "url": "https://raw.githubusercontent.com/ClaidArremer/digitakt-digiseq/54355a427b5ba1e36f051882b9e2a9daa5cd146d/elemods/seq-events-dt-0.2-os1.53.elemod",
+   "path": "elemods/digitakt-mk1/1.53/seq-events-dt-0.2-os1.53.elemod",
+   "sha256": "31f0f5464f3019dd17f3b655319251e9a7285c2901d9e61f5dca964ee2c65342"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.53",
+   "id": "tonefx",
+   "version": "4.0c",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "DigiAlchemydsp/Tone-FX@v4.0c",
+   "url": "https://github.com/DigiAlchemydsp/Tone-FX/releases/download/v4.0c/tonefx-4.0c-dt.elemod",
+   "path": "elemods/digitakt-mk1/1.53/tonefx-4.0c-dt.elemod",
+   "sha256": "9cb5a223ac0de3bb0c34a0ad71f21ecdbcd8e0c29782f12cdda50178fc4ee37f"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "core",
+   "version": "4.0",
+   "license": "GPL-2.0-or-later",
+   "requires": [],
+   "conflicts": [],
+   "source": "elekloader/elekloader@core-v4.0",
+   "url": "https://github.com/elekloader/elekloader/releases/download/core-v4.0/core-4.0-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/core-4.0-os1.54.elemod",
+   "sha256": "8b6e5af584973f6eb3aaecffd8b6ab1825f15fabbb5e82eac38ba23aa5f49d39"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digi101",
+   "version": "0.25",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "machine-pages",
+    "digimono"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digi101-0.25-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digi101-0.25-os1.54.elemod",
+   "sha256": "4285b1c619d6b8bc90d44c90aa3609facd146e05b20e6805357f5821452f3e31"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digieq",
+   "version": "1.0c",
+   "license": "MIT",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digieq-1.0c-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digieq-1.0c-os1.54.elemod",
+   "sha256": "d0ee392ba21d65909d44b81f689a02c3d9cb7a1d02406ddaea19bdd5ecc9a87b"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digifilter",
+   "version": "1.3",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "DigiAlchemydsp/DigiFilter@v1.3",
+   "url": "https://github.com/DigiAlchemydsp/DigiFilter/releases/download/v1.3/digifilter-1.3.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digifilter-1.3.elemod",
+   "sha256": "05169b93bde4dfd698f2844b664f3530270941c1a256fac2b79b1899901a3c23"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digihealth",
+   "version": "1.0",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "irpina/digihealth@v1.1.1",
+   "url": "https://github.com/irpina/digihealth/releases/download/v1.1.1/digihealth-1.0-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digihealth-1.0-os1.54.elemod",
+   "sha256": "84c39e08eff429dfc7766d09b91d323524275eba1df9de55a30074e7338863bb"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digimacro",
+   "version": "1.2",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "machine-pages",
+    "digimono"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digimacro-1.2-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digimacro-1.2-os1.54.elemod",
+   "sha256": "d99823b2cd3c2933d49882ca55fa705a87a80f649929ba0bb554b692fc367ba8"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digimatrix",
+   "version": "1.0c",
+   "license": "MIT",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digimatrix-1.0c-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digimatrix-1.0c-os1.54.elemod",
+   "sha256": "ce044908388369567b87b0890860706cdf1afab8877c6e852814414cd5e0cba3"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digimono",
+   "version": "0.24",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "machine-pages"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digimono-0.24-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digimono-0.24-os1.54.elemod",
+   "sha256": "00b060b864c4412d669544421b22b1032ac64bfbd3a930cda1deda095b634dee"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digineighbor",
+   "version": "0.7",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core",
+    "machine-pages"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digineighbor-0.7-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digineighbor-0.7-os1.54.elemod",
+   "sha256": "8a5425c56f89c3fa30552075f9fae14a91739b94ed5fb39d2b11f751f92ed572"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digipoly",
+   "version": "2.1",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "machine-pages"
+   ],
+   "conflicts": [
+    "dt8poly"
+   ],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digipoly-2.1-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digipoly-2.1-os1.54.elemod",
+   "sha256": "460dc14ed4cf531f446aee8f9328b630ce39beb5b857d51c4b5794245202b901"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digiseq-dt",
+   "version": "0.2",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core",
+    "seq-events"
+   ],
+   "conflicts": [],
+   "source": "ClaidArremer/digitakt-digiseq@54355a4",
+   "url": "https://raw.githubusercontent.com/ClaidArremer/digitakt-digiseq/54355a427b5ba1e36f051882b9e2a9daa5cd146d/elemods/digiseq-dt-0.2-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digiseq-dt-0.2-os1.54.elemod",
+   "sha256": "0f2ff2259c404fae1cfd7e773e3c5dcb9b564a3bb9b8127bae5fd11ccfec0f9d"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digislicer",
+   "version": "2.5",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core",
+    "machine-pages"
+   ],
+   "conflicts": [],
+   "source": "irpina/digislicer@v2.5",
+   "url": "https://github.com/irpina/digislicer/releases/download/v2.5/digislicer-2.5-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digislicer-2.5-os1.54.elemod",
+   "sha256": "6dd4c6d97db4d2de14a1461175651155f2f344e4f4e39019810378fd145ad6f8"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digisnake-dt",
+   "version": "0.3",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core",
+    "seq-events"
+   ],
+   "conflicts": [],
+   "source": "ClaidArremer/digitakt-digisnake@5785a77",
+   "url": "https://raw.githubusercontent.com/ClaidArremer/digitakt-digisnake/5785a7737764d6062ec973c2ae396a91365c6a82/elemods/digisnake-dt-0.3-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digisnake-dt-0.3-os1.54.elemod",
+   "sha256": "e00b175b7121ab85aef542c52f08606ba05b812553ca8273344c70150b03a229"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digisophie",
+   "version": "1.2.0",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "machine-pages"
+   ],
+   "conflicts": [],
+   "source": "soejrd/digisophie@v1.2.0",
+   "url": "https://github.com/soejrd/digisophie/releases/download/v1.2.0/digisophie-1.2.0-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digisophie-1.2.0-os1.54.elemod",
+   "sha256": "743439412b1039cba809f5cd401671490628759c6536d519ade7e69c2c1fa072"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digistring",
+   "version": "0.8.0",
+   "license": "MIT",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [
+    "digistring-fast"
+   ],
+   "source": "Alez22/digistring@v0.8.0",
+   "url": "https://github.com/Alez22/digistring/releases/download/v0.8.0/digistring-0.8.0-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digistring-0.8.0-os1.54.elemod",
+   "sha256": "6166b1f32700ae2e107f9fcc1af8723da2680e7f4d6b186ec84ab5a9536b89dc"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digistring-fast",
+   "version": "0.8.0",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "digihealth"
+   ],
+   "conflicts": [
+    "digistring"
+   ],
+   "source": "Alez22/digistring@v0.8.0",
+   "url": "https://github.com/Alez22/digistring/releases/download/v0.8.0/digistring-fast-0.8.0-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digistring-fast-0.8.0-os1.54.elemod",
+   "sha256": "7d2c681592ae3fea5d91a09523a74cc604f2be60f8ac0261ae733f8233586316"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "digiutils",
+   "version": "1.9a",
+   "license": "MIT",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "gdeo607/digi1_mods@32fd22a",
+   "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digiutils-1.9a-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/digiutils-1.9a-os1.54.elemod",
+   "sha256": "ed13ca17753e4885b195c2ee7183ce370ad2fdd5b9f730de8a03962fc9397765"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "dt-fm",
+   "version": "1.2.1",
+   "license": "MIT",
+   "requires": [
+    "core",
+    "machine-pages"
+   ],
+   "conflicts": [],
+   "source": "mtalikka/DT-FM@v1.2.1",
+   "url": "https://github.com/mtalikka/DT-FM/releases/download/v1.2.1/dt-fm-1.2.1-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/dt-fm-1.2.1-os1.54.elemod",
+   "sha256": "336612bce704d2b52b39cf9a8fbb0b9dcaf3b95367c753a3e3e0c1d4ae360b3e"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "machine-pages",
+   "version": "1.2",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [
+    "digichain"
+   ],
+   "source": "irpina/digislicer@v2.5",
+   "url": "https://github.com/irpina/digislicer/releases/download/v2.5/machine-pages-1.2-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/machine-pages-1.2-os1.54.elemod",
+   "sha256": "d716bbeb70c8f7c9e8acc8bdb81681217eb8eb25ce700fe9a6ab786fed02d1f0"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "machine-pages",
+   "version": "1.3",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [
+    "digichain"
+   ],
+   "source": "elekloader/elekloader@machine-pages-v1.3",
+   "url": "https://github.com/elekloader/elekloader/releases/download/machine-pages-v1.3/machine-pages-1.3-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/machine-pages-1.3-os1.54.elemod",
+   "sha256": "2ff4528fd7eed6b7c6839574ad1fe8f20c971a31c3975fb344463fa292b9659f"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "ob1",
+   "version": "0.6",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core",
+    "machine-pages"
+   ],
+   "conflicts": [],
+   "source": "simonjohansson/elektrob-1@ob1-v0.6",
+   "url": "https://github.com/simonjohansson/elektrob-1/releases/download/ob1-v0.6/ob1-0.6-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/ob1-0.6-os1.54.elemod",
+   "sha256": "9ec967f0a63a5d1992bc4cbc5a7dd2e3e53e9fda21f8122c45087f4e056a64dd"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "seq-events",
+   "version": "0.2",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "ClaidArremer/digitakt-digiseq@54355a4",
+   "url": "https://raw.githubusercontent.com/ClaidArremer/digitakt-digiseq/54355a427b5ba1e36f051882b9e2a9daa5cd146d/elemods/seq-events-dt-0.2-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/seq-events-dt-0.2-os1.54.elemod",
+   "sha256": "7ca58495ad49636980f1d150ca668f9e50d710ddc3bf0c0b193c02863804f3f4"
+  },
+  {
+   "device": "digitakt-mk1",
+   "os": "1.54",
+   "id": "tonefx",
+   "version": "4.0c",
+   "license": "GPL-2.0-or-later",
+   "requires": [
+    "core"
+   ],
+   "conflicts": [],
+   "source": "DigiAlchemydsp/Tone-FX@v4.0c",
+   "url": "https://github.com/DigiAlchemydsp/Tone-FX/releases/download/v4.0c/tonefx-4.0c-dt-os1.54.elemod",
+   "path": "elemods/digitakt-mk1/1.54/tonefx-4.0c-dt-os1.54.elemod",
+   "sha256": "4239d3613835dabf8d072acaee43e028bb469e60435ce838081a2e3f94e476c8"
+  }
+ ]
 }

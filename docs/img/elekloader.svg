@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" role="img">
+<title>Schéma de la page elekloader : 1 choisis ta machine, 2 dépose l'OS officiel, 3 ajoute les .elemod et clique Build</title>
+<style>
+.c{fill:#1b1808}.p{fill:#2b2714}.y{fill:#ffe23a}.w{fill:#eee8c4}.g{fill:#a59f7c}
+.l{stroke:#ffe23a;fill:none;stroke-width:3}.d{stroke:#ffe23a;fill:none;stroke-width:3;stroke-dasharray:9 7}
+.h{font-size:20px;font-weight:700}.s{font-size:15px}.n{fill:#1b1808;font-size:20px;font-weight:800}
+</style>
+<rect class="c" width="900" height="470" rx="18"/>
+<text class="g s" x="24" y="34">elekloader.github.io/elekloader  ·  schéma, pas une capture d'écran</text>
+<!-- étape 1 -->
+<circle class="y" cx="40" cy="80" r="16"/><text class="n" x="34" y="87">1</text>
+<text class="w h" x="66" y="87">Pick your device</text>
+<text class="g s" x="66" y="110">→ clique sur ta machine</text>
+<rect class="p" x="66" y="124" width="160" height="56" rx="10"/><rect class="l" x="66" y="124" width="160" height="56" rx="10"/>
+<text class="y h" x="86" y="159">Digitakt</text>
+<rect class="p" x="240" y="124" width="160" height="56" rx="10"/>
+<text class="w h" x="258" y="159">Digitakt II</text>
+<!-- étape 2 -->
+<circle class="y" cx="40" cy="228" r="16"/><text class="n" x="34" y="235">2</text>
+<text class="w h" x="66" y="235">Add its stock OS file</text>
+<text class="g s" x="66" y="258">→ glisse le .zip Elektron tel quel, pas besoin de le dézipper</text>
+<rect class="d" x="66" y="272" width="380" height="60" rx="10"/>
+<text class="y s" x="86" y="307">⬇  Digitakt_OS1.54_dist.zip</text>
+<!-- étape 3 -->
+<circle class="y" cx="40" cy="378" r="16"/><text class="n" x="34" y="385">3</text>
+<text class="w h" x="66" y="385">Add mods, then build</text>
+<text class="g s" x="66" y="408">→ glisse tous les .elemod du pack, puis Build</text>
+<rect class="d" x="66" y="420" width="300" height="38" rx="10"/>
+<text class="y s" x="84" y="444">+ Add your own .elemod</text>
+<rect class="y" x="384" y="420" width="130" height="38" rx="10"/>
+<text class="n" x="404" y="446" style="font-size:18px">Build ▸</text>
+<!-- résultat -->
+<rect class="p" x="560" y="272" width="310" height="186" rx="12"/>
+<text class="w h" x="580" y="306">Résultat</text>
+<text class="w s" x="580" y="336">Le site te fait télécharger</text>
+<text class="w s" x="580" y="358">un fichier .syx : c'est ton OS</text>
+<text class="w s" x="580" y="380">custom. Rien n'est envoyé sur</text>
+<text class="w s" x="580" y="402">internet, tout se passe dans</text>
+<text class="w s" x="580" y="424">ton navigateur.</text>
+</svg>

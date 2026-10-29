@@ -21,6 +21,18 @@ jobs:
           zip -j -q packs/tous-les-mods-mk1-1.54.zip elemods/digitakt-mk1/1.54/*.elemod
           zip -j -q packs/tous-les-mods-mk1-1.53.zip elemods/digitakt-mk1/1.53/*.elemod
           zip -j -q packs/tous-les-mods-dt2-1.17.zip elemods/digitakt-ii/1.17/*.elemod
-      - run: gh release create "$GITHUB_REF_NAME" packs/*.zip elemods/*/*/*.elemod --title "$GITHUB_REF_NAME" --generate-notes
+      - name: Code source des mods GPL (GPL-2.0, section 3a)
+        run: |
+          mkdir sources
+          python3 -c "import json;[print(m.get('built_from', m['source'])) for m in json.load(open('mods.json'))['mods'] if m['license'].startswith('GPL')]" | sort -u |
+          while IFS=@ read -r repo ref; do
+            gh api "repos/$repo/tarball/$ref" > "sources/source-${repo//\//-}-$ref.tar.gz"
+          done
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: |
+          files="packs/*.zip elemods/*/*/*.elemod sources/*.tar.gz"
+          gh release create "$GITHUB_REF_NAME" $files --title "$GITHUB_REF_NAME" --generate-notes ||
+            gh release upload "$GITHUB_REF_NAME" $files --clobber
         env:
           GH_TOKEN: ${{ github.token }}

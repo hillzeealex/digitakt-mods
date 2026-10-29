@@ -108,5 +108,7 @@ recettes avec `tools/build.sh`.
 
 Chaque mod garde la licence de son auteur : champ `license` de `mods.json`, texte dans [`licenses/`](licenses/), code
 source à la référence `source`. Merci à leurs auteurs : irpina, gdeo607, Robbie, soejrd, Alez22, mtalikka,
-simonjohansson, DigiAlchemydsp, ClaidArremer, toonst, et l'équipe elekloader. L'outillage de ce dépôt est sous
-[MIT](LICENSE).
+simonjohansson, DigiAlchemydsp, ClaidArremer, toonst, et l'équipe elekloader.
+
+Le code source des mods GPL est joint à chaque release (`source-*.tar.gz`), à la référence indiquée dans `mods.json`
+(`source`, ou `built_from` quand le fichier a été construit à partir d'un autre dépôt).

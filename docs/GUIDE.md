@@ -11,15 +11,15 @@ Pas besoin de connaître GitHub, ni de programmer. Il te faut un ordinateur, ta 
 
 | | |
 |---|---|
-| ✅ **Ta machine** | une **Digitakt** (la première) ou une **Digitakt II** : c'est écrit sur l'appareil |
-| ✅ **Le câble USB** | celui qui relie la Digitakt à l'ordinateur |
-| ✅ **Elektron Transfer** | le logiciel gratuit d'Elektron, à installer depuis [elektron.se/support-downloads/transfer](https://www.elektron.se/support-downloads/transfer) |
-| ✅ **Une sauvegarde** | sauvegarde tes projets importants, comme avant n'importe quelle mise à jour |
+| **Ta machine** | une **Digitakt** (la première) ou une **Digitakt II** : c'est écrit sur l'appareil |
+| **Le câble USB** | celui qui relie la Digitakt à l'ordinateur |
+| **Elektron Transfer** | le logiciel gratuit d'Elektron, à installer depuis [elektron.se/support-downloads/transfer](https://www.elektron.se/support-downloads/transfer) |
+| **Une sauvegarde** | sauvegarde tes projets importants, comme avant n'importe quelle mise à jour |
 
-> ⚠️ **Ce ne sont pas des mises à jour officielles d'Elektron.** Tu les installes à tes risques. Tu peux toujours
+> **Attention : ce ne sont pas des mises à jour officielles d'Elektron.** Tu les installes à tes risques. Tu peux toujours
 > revenir en arrière (voir [Si ça ne marche pas](#si-ça-ne-marche-pas)).
 
-> ⚠️ **Digitakt II :** les machines DIGISLICER, POLY, STRING, DT-FM, MONO… n'existent **que sur la première
+> **Attention, Digitakt II :** les machines DIGISLICER, POLY, STRING, DT-FM, MONO… n'existent **que sur la première
 > Digitakt**. Sur la Digitakt II, il n'y a pour l'instant que le pack « PERFORM KIT ».
 
 ---
@@ -45,11 +45,11 @@ plein de fichiers qui finissent par `.elemod`. Ce sont les mods.
 
 | pack | ce qu'il y a dedans | télécharger |
 |---|---|---|
-| <img src="icons/digislicer.svg" width="28"> <img src="icons/digipoly.svg" width="28"> <img src="icons/digistring.svg" width="28"> <img src="icons/dt-fm.svg" width="28"> <img src="icons/digimono.svg" width="28"> <img src="icons/digi101.svg" width="28"><br>**Digitakt « on crack »** | les machines qu'on voit en story : SLICER, POLY, STRING, DT-FM, MONO, CHORDS, DH-101 | [⬇ pack-graete-1.54.zip](https://github.com/hillzeealex/digitakt-mods/releases/latest/download/pack-graete-1.54.zip) |
-| <img src="icons/digimacro.svg" width="28"> <img src="icons/digineighbor.svg" width="28"> <img src="icons/digimatrix.svg" width="28"> <img src="icons/digiutils.svg" width="28"> <img src="icons/digisnake-dt.svg" width="28"><br>**Max synthés** | tout le pack précédent, plus MACRO (Plaits), NEIGHBOR, la matrice de modulation, le scope, l'EQ et DIGISNAKE | [⬇ pack-max-synth-1.54.zip](https://github.com/hillzeealex/digitakt-mods/releases/latest/download/pack-max-synth-1.54.zip) |
-| <img src="icons/tonefx.svg" width="28"> <img src="icons/digifilter.svg" width="28"> <img src="icons/digislicer.svg" width="28"><br>**Effets** | Tone+FX (ring mod, wavefolder, bitcrusher…), nouveaux filtres, SLICER | [⬇ pack-fx-1.54.zip](https://github.com/hillzeealex/digitakt-mods/releases/latest/download/pack-fx-1.54.zip) |
-| <img src="icons/ob1.svg" width="28"> <img src="icons/digisophie.svg" width="28"><br>**OB-1 + SOPHIE** | l'oscillateur Oberheim OB-1 et la percussion métallique SOPHIE, avec MONO, DH-101, SLICER, POLY, STRING | [⬇ pack-ob1-sophie-1.54.zip](https://github.com/hillzeealex/digitakt-mods/releases/latest/download/pack-ob1-sophie-1.54.zip) |
-| <img src="icons/perform-direct-dt2.svg" width="28"> <img src="icons/perform-levels-dt2.svg" width="28"><br>**Digitakt II : PERFORM KIT** | [PRESET] seul active PERFORM KIT, et tes niveaux de piste sont gardés quand tu en sors | [⬇ pack-perform-1.17.zip](https://github.com/hillzeealex/digitakt-mods/releases/latest/download/pack-perform-1.17.zip) |
+| <img src="icons/digislicer.svg" width="28"> <img src="icons/digipoly.svg" width="28"> <img src="icons/digistring.svg" width="28"> <img src="icons/dt-fm.svg" width="28"> <img src="icons/digimono.svg" width="28"> <img src="icons/digi101.svg" width="28"><br>**Digitakt « on crack »** | les machines qu'on voit en story : SLICER, POLY, STRING, DT-FM, MONO, CHORDS, DH-101 | [Télécharger pack-graete-1.54.zip](https://github.com/hillzeealex/digitakt-mods/releases/latest/download/pack-graete-1.54.zip) |
+| <img src="icons/digimacro.svg" width="28"> <img src="icons/digineighbor.svg" width="28"> <img src="icons/digimatrix.svg" width="28"> <img src="icons/digiutils.svg" width="28"> <img src="icons/digisnake-dt.svg" width="28"><br>**Max synthés** | tout le pack précédent, plus MACRO (Plaits), NEIGHBOR, la matrice de modulation, le scope, l'EQ et DIGISNAKE | [Télécharger pack-max-synth-1.54.zip](https://github.com/hillzeealex/digitakt-mods/releases/latest/download/pack-max-synth-1.54.zip) |
+| <img src="icons/tonefx.svg" width="28"> <img src="icons/digifilter.svg" width="28"> <img src="icons/digislicer.svg" width="28"><br>**Effets** | Tone+FX (ring mod, wavefolder, bitcrusher…), nouveaux filtres, SLICER | [Télécharger pack-fx-1.54.zip](https://github.com/hillzeealex/digitakt-mods/releases/latest/download/pack-fx-1.54.zip) |
+| <img src="icons/ob1.svg" width="28"> <img src="icons/digisophie.svg" width="28"><br>**OB-1 + SOPHIE** | l'oscillateur Oberheim OB-1 et la percussion métallique SOPHIE, avec MONO, DH-101, SLICER, POLY, STRING | [Télécharger pack-ob1-sophie-1.54.zip](https://github.com/hillzeealex/digitakt-mods/releases/latest/download/pack-ob1-sophie-1.54.zip) |
+| <img src="icons/perform-direct-dt2.svg" width="28"> <img src="icons/perform-levels-dt2.svg" width="28"><br>**Digitakt II : PERFORM KIT** | [PRESET] seul active PERFORM KIT, et tes niveaux de piste sont gardés quand tu en sors | [Télécharger pack-perform-1.17.zip](https://github.com/hillzeealex/digitakt-mods/releases/latest/download/pack-perform-1.17.zip) |
 
 Le premier pack est le plus sûr pour commencer : c'est celui qui laisse le plus de marge à la machine.
 

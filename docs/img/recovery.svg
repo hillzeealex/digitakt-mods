@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" role="img">
+<title>Récupération : maintenir FUNC en allumant, puis TRIG 4 (OS UPGRADE), puis renvoyer l'OS officiel</title>
+<style>
+.c{fill:#1b1808}.p{fill:#2b2714}.y{fill:#ffe23a}.w{fill:#eee8c4}.g{fill:#a59f7c}
+.l{stroke:#ffe23a;fill:none;stroke-width:3;stroke-linecap:round}
+.h{font-size:20px;font-weight:700}.s{font-size:15px}.n{fill:#1b1808;font-size:20px;font-weight:800}
+</style>
+<rect class="c" width="900" height="250" rx="18"/>
+<circle class="y" cx="40" cy="44" r="16"/><text class="n" x="34" y="51">1</text>
+<text class="w h" x="66" y="51">Maintiens FUNC et allume la machine</text>
+<rect class="y" x="66" y="70" width="80" height="46" rx="8"/><text class="n" x="80" y="100" style="font-size:18px">FUNC</text>
+<text class="y h" x="160" y="100">+</text>
+<circle class="l" cx="207" cy="93" r="20"/><path class="l" d="M207 70v20"/>
+<circle class="y" cx="290" cy="44" r="0"/>
+<circle class="y" cx="470" cy="44" r="16"/><text class="n" x="464" y="51">2</text>
+<text class="w h" x="496" y="51">Dans le menu, appuie sur TRIG 4</text>
+<g class="p"><rect x="496" y="78" width="28" height="36" rx="5"/><rect x="532" y="78" width="28" height="36" rx="5"/><rect x="568" y="78" width="28" height="36" rx="5"/><rect x="640" y="78" width="28" height="36" rx="5"/><rect x="676" y="78" width="28" height="36" rx="5"/><rect x="712" y="78" width="28" height="36" rx="5"/><rect x="748" y="78" width="28" height="36" rx="5"/><rect x="784" y="78" width="28" height="36" rx="5"/></g>
+<rect class="y" x="604" y="78" width="28" height="36" rx="5"/><text class="n" x="612" y="103" style="font-size:16px">4</text>
+<text class="g s" x="496" y="136">OS UPGRADE</text>
+<circle class="y" cx="40" cy="178" r="16"/><text class="n" x="34" y="185">3</text>
+<text class="w h" x="66" y="185">Renvoie l'OS officiel avec Transfer (mode « legacy »)</text>
+<text class="g s" x="66" y="212">Digitakt mk1 : par USB.  Digitakt II : par les prises MIDI DIN (interface MIDI), pas par USB.</text>
+<text class="g s" x="66" y="234">Ta machine retrouve son OS d'origine. Ça marche toujours : le bootloader n'est jamais touché par les mods.</text>
+</svg>

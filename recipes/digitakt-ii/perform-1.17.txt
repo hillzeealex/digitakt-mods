@@ -1,0 +1,4 @@
+# PERFORM KIT : [PRESET] seul bascule le mode, et les niveaux de piste survivent à la sortie.
+elemods/digitakt-ii/1.17/core-1.0.elemod
+elemods/digitakt-ii/1.17/perform-direct-1.0.elemod
+elemods/digitakt-ii/1.17/perform-levels-1.0.elemod

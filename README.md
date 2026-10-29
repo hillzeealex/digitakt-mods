@@ -22,7 +22,8 @@ trouver. elekloader part de **ton** fichier OS officiel, vérifie que les mods c
 3. Construis ton OS :
    - **dans le navigateur**, rien à installer : <https://elekloader.github.io/elekloader/>. Tu y déposes l'OS stock et
      les `.elemod`, puis tu cliques sur Build ;
-   - **ou en ligne de commande** : `tools/build.sh` (voir [`recipes/`](recipes/)).
+   - **ou en ligne de commande** : `tools/build.sh recipes/digitakt-mk1/graete-1.54.txt Digitakt_OS1.54.syx out/os.syx`
+     (voir [`recipes/`](recipes/)).
 4. Envoie le `.syx` obtenu à la machine avec Elektron Transfer.
 
 ## Contenu

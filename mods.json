@@ -1,5 +1,5 @@
 {
- "about": "Une entrée par fichier .elemod. source = repo@ref amont, url = d'où sync.py le retélécharge, sha256 = le fichier attendu.",
+ "about": "Une entrée par fichier .elemod. source = repo@ref amont, url = d'où sync.py le retélécharge, sha256 = le fichier attendu. built_from = le dépôt@ref du code source quand il diffère de source.",
  "mods": [
   {
    "device": "digitakt-ii",
@@ -12,7 +12,8 @@
    "source": "toonst/digitakt2-perform@v1.0",
    "url": "https://github.com/toonst/digitakt2-perform/releases/download/v1.0/core-1.0.elemod",
    "path": "elemods/digitakt-ii/1.17/core-1.0.elemod",
-   "sha256": "95303655a9358f581b485acb68b884b394a577f5d0b373f0a3e5957c8d0ca72c"
+   "sha256": "95303655a9358f581b485acb68b884b394a577f5d0b373f0a3e5957c8d0ca72c",
+   "built_from": "elekloader/elekloader@827bc68"
   },
   {
    "device": "digitakt-ii",
@@ -102,7 +103,8 @@
    "source": "gdeo607/digi1_mods@32fd22a",
    "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digifilter-1.1a.elemod",
    "path": "elemods/digitakt-mk1/1.53/digifilter-1.1a.elemod",
-   "sha256": "86e302abe22134347e427c4626971ee223d666f072e5e163385f3bad31c187be"
+   "sha256": "86e302abe22134347e427c4626971ee223d666f072e5e163385f3bad31c187be",
+   "built_from": "DigiAlchemydsp/DigiFilter@404f72f"
   },
   {
    "device": "digitakt-mk1",
@@ -181,7 +183,8 @@
    "source": "gdeo607/digi1_mods@32fd22a",
    "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digineighbor-0.7.elemod",
    "path": "elemods/digitakt-mk1/1.53/digineighbor-0.7.elemod",
-   "sha256": "cae48c35a37e1d8e34c04a98273c9346cc90a3ea0c848e70e43ca58d24dbba0c"
+   "sha256": "cae48c35a37e1d8e34c04a98273c9346cc90a3ea0c848e70e43ca58d24dbba0c",
+   "built_from": "irpina/digineighbor@f563922"
   },
   {
    "device": "digitakt-mk1",
@@ -346,7 +349,8 @@
    "source": "irpina/digislicer@v2.5",
    "url": "https://github.com/irpina/digislicer/releases/download/v2.5/machine-pages-1.2.elemod",
    "path": "elemods/digitakt-mk1/1.53/machine-pages-1.2.elemod",
-   "sha256": "8526d61694c798bc765ae07b48ff613126d071813e887df516281c17a56c6c94"
+   "sha256": "8526d61694c798bc765ae07b48ff613126d071813e887df516281c17a56c6c94",
+   "built_from": "elekloader/elekloader@machine-pages-v1.2"
   },
   {
    "device": "digitakt-mk1",
@@ -532,7 +536,8 @@
    "source": "gdeo607/digi1_mods@32fd22a",
    "url": "https://raw.githubusercontent.com/gdeo607/digi1_mods/32fd22a1fd66fa5833b808b1c1c049a0deb82d88/elemods/digineighbor-0.7-os1.54.elemod",
    "path": "elemods/digitakt-mk1/1.54/digineighbor-0.7-os1.54.elemod",
-   "sha256": "8a5425c56f89c3fa30552075f9fae14a91739b94ed5fb39d2b11f751f92ed572"
+   "sha256": "8a5425c56f89c3fa30552075f9fae14a91739b94ed5fb39d2b11f751f92ed572",
+   "built_from": "irpina/digineighbor@f563922"
   },
   {
    "device": "digitakt-mk1",
@@ -697,7 +702,8 @@
    "source": "irpina/digislicer@v2.5",
    "url": "https://github.com/irpina/digislicer/releases/download/v2.5/machine-pages-1.2-os1.54.elemod",
    "path": "elemods/digitakt-mk1/1.54/machine-pages-1.2-os1.54.elemod",
-   "sha256": "d716bbeb70c8f7c9e8acc8bdb81681217eb8eb25ce700fe9a6ab786fed02d1f0"
+   "sha256": "d716bbeb70c8f7c9e8acc8bdb81681217eb8eb25ce700fe9a6ab786fed02d1f0",
+   "built_from": "elekloader/elekloader@machine-pages-v1.2"
   },
   {
    "device": "digitakt-mk1",

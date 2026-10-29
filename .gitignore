@@ -1,0 +1,8 @@
+# Jamais de firmware Elektron dans ce repo : chacun fournit son OS stock.
+*.syx
+*.zip
+*.bin
+.cache/
+out/
+__pycache__/
+.DS_Store

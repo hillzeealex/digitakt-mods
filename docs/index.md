@@ -10,6 +10,9 @@ Sans savoir coder. Il te faut ta machine, son câble USB, un ordinateur et 20 mi
 
 Regarde ce qui est écrit sous l'écran : **[Digitakt](#digitakt)** ou **[Digitakt II](#digitakt-ii)** ?
 
+> **Attention :** si un jour la machine ne démarre plus, la réparation passe par une **interface MIDI** (les prises
+> rondes), pas par l'USB. C'est la même chose sur les deux Digitakt. Sans interface MIDI, ne l'installe pas.
+
 ---
 
 ## Digitakt
@@ -49,9 +52,6 @@ Maintiens **FUNC** et appuie sur **SRC**. Choisis une machine avec les flèches 
 
 ## Digitakt II
 
-> **Attention :** si ça plante, la réparation sur Digitakt II passe par une **interface MIDI** (les prises rondes),
-> pas par l'USB. Sans interface MIDI, ne l'installe pas.
-
 Tu ajoutes deux améliorations de PERFORM KIT : **[PRESET]** seul l'active, et tes niveaux de piste restent quand tu
 en sors. Les synthés de la Digitakt (STRING, POLY…) n'existent pas sur la Digitakt II.
 
@@ -70,6 +70,10 @@ Ensuite, fais comme pour la Digitakt ([étapes 2 et 3](#etape-2)), en cliquant s
 
 Pas de panique : les mods ne touchent jamais à la partie qui démarre la machine. Tu peux toujours remettre l'OS
 officiel. Le fichier `.syx` à renvoyer est dans le `.zip` Elektron : double-clique dessus pour le sortir.
+
+**Si elle démarre encore**, renvoie l'OS officiel comme à l'étape 3, en USB.
+
+**Si elle ne démarre plus**, branche une interface MIDI sur ses prises rondes, puis :
 
 ![Récupération : FUNC à l'allumage, puis TRIG 4, puis renvoyer l'OS officiel](img/recovery.svg)
 

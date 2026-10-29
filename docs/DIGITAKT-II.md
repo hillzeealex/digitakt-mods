@@ -12,7 +12,7 @@ DT2, trois chaînes d'outils existent, et elles **s'excluent mutuellement** : on
 | fichiers | ici : [`elemods/digitakt-ii/1.17/`](../elemods/digitakt-ii/1.17/) | [ElekLabs/digikit](https://github.com/ElekLabs/digikit) | [karigardarsson/digitakt-ii-research](https://github.com/karigardarsson/digitakt-ii-research) v0.3.0-beta |
 | licence | GPL-2.0-or-later | AGPL-3.0-or-later | AGPL-3.0-or-later (racine du repo en MIT) |
 | testé sur une machine | core + perform-direct oui, perform-levels oui ; les deux ensemble pas encore | runtime + PLUCK oui, freqshift non | une build précédente oui ; la v0.3.0 exacte non |
-| builder | Python, toutes plateformes | `mise` + toolchains, macOS / Linux | **Windows x64 uniquement** (à reconstruire soi-même sur macOS) |
+| builder | Python, toutes plateformes | `mise` + toolchains, macOS / Linux | Windows x64 ; sur macOS / Linux : [`tools/build-plaits.sh`](../tools/build-plaits.sh) |
 
 ### Pourquoi on ne peut pas les combiner
 
@@ -55,7 +55,27 @@ Sans `--modules`, le patch applique le set `device`. Celui-ci contient `dynfx` e
 
 ## 3. All-in-One
 
-Lance `DT2-All-in-One-Builder.exe` sous Windows avec ton `Digitakt_II_OS1.17.syx`. Lis d'abord leurs pages
+**Sous Windows :** lance `DT2-All-in-One-Builder.exe` avec ton `Digitakt_II_OS1.17.syx`.
+
+**Sur Mac (ou Linux) :** il faut `cargo` ([rustup.rs](https://rustup.rs)), `uv` et un compilateur C, puis :
+
+```sh
+tools/build-plaits.sh Digitakt_II_OS1.17.syx      # écrit out/DT2_All-in-One_v0.3.0-beta_OS1.17.syx
+```
+
+Le script télécharge la release r2 et vérifie son empreinte. Il recompile ensuite les deux outils natifs (patchkit de
+digikit, elektron-firmware-tool) depuis la source qu'elle contient, puis lance le builder de l'auteur, avec tous ses
+contrôles. Le résultat est identique octet pour octet à celui de Windows (sha256
+`426dd1be5be3d356b5fa26900c729baf555cc16393611c4e0544ebd2d95eec76`), sinon rien n'est écrit. Vérifié sur macOS
+(Apple Silicon) avec l'OS 1.17 officiel.
+
+Pour jouer : FUNC + SRC sur une piste audio, choisis **PLAITS**, puis **YES**. Le knob B (MODEL) choisit l'un des 25
+modèles ; rejoue une note après chaque changement. De 18 à 21, ce sont les banques DX7, et C (HARM) choisit le son.
+Le [mode d'emploi de l'auteur](https://github.com/karigardarsson/digitakt-ii-research/blob/main/docs/DIGITAKT_II_ALL_IN_ONE_USER_GUIDE.md)
+détaille le reste.
+
+L'auteur signale que d'anciennes builds Plaits ont bloqué à 0 % (PREPARING) pendant une mise à jour normale par
+Transfer. Lis d'abord leurs pages
 [Installation](https://github.com/karigardarsson/digitakt-ii-research/blob/main/docs/INSTALLATION.md) et
 [Recovery](https://github.com/karigardarsson/digitakt-ii-research/blob/main/docs/RECOVERY.md). Problème connu : un
 clic récurrent au déclenchement de Plaits. Le `.syx` produit contient du code Elektron : ne le redistribue jamais.

@@ -63,6 +63,10 @@ en sors. Les synthés de la Digitakt (STRING, POLY…) n'existent pas sur la Dig
 Ensuite, fais comme pour la Digitakt ([étapes 2 et 3](#etape-2)), en cliquant sur **Digitakt II** et en glissant les
 3 fichiers du pack.
 
+Tu préfères des synthés ? **Plaits + DX7** existe aussi pour la Digitakt II, mais à la place de PERFORM KIT, pas en
+plus. Sur Windows, il se fabrique avec [l'outil de son auteur](https://github.com/karigardarsson/digitakt-ii-research/blob/main/docs/INSTALLATION.md).
+Sur Mac, il faut lancer une commande ([voir ici](https://github.com/hillzeealex/digitakt-mods/blob/main/docs/DIGITAKT-II.md#3-all-in-one)).
+
 ---
 
 <a id="si-ca-plante"></a>

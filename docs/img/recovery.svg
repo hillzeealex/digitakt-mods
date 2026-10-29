@@ -19,6 +19,6 @@
 <text class="g s" x="496" y="136">OS UPGRADE</text>
 <circle class="y" cx="40" cy="178" r="16"/><text class="n" x="34" y="185">3</text>
 <text class="w h" x="66" y="185">Renvoie l'OS officiel avec Transfer (mode « legacy »)</text>
-<text class="g s" x="66" y="212">Digitakt mk1 : par USB.  Digitakt II : par les prises MIDI DIN (interface MIDI), pas par USB.</text>
+<text class="g s" x="66" y="212">Digitakt et Digitakt II : par les prises MIDI DIN (interface MIDI), pas par USB.</text>
 <text class="g s" x="66" y="234">Ta machine retrouve son OS d'origine. Ça marche toujours : le bootloader n'est jamais touché par les mods.</text>
 </svg>

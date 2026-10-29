@@ -9,7 +9,7 @@ Tous les mods open source pour <b>Elektron Digitakt</b> et <b>Digitakt II</b>, a
 vérifiés ensemble, en packs prêts à installer.
 </p>
 
-<p align="center"><a href="docs/GUIDE.md"><b>Guide pas à pas illustré (aucune connaissance de GitHub requise)</b></a></p>
+<p align="center"><a href="https://hillzeealex.github.io/digitakt-mods/"><b>Guide pas à pas illustré, sans connaître GitHub</b></a></p>
 
 ---
 
@@ -20,7 +20,7 @@ sur [elekloader.github.io/elekloader](https://elekloader.github.io/elekloader/),
 ![Les 4 étapes](docs/img/flow.svg)
 
 > **Non officiel.** Rien ici n'est affilié à Elektron, et tu flashes à tes risques. Le bootloader n'est jamais
-> modifié, donc l'OS officiel restaure toujours la machine ([comment](docs/GUIDE.md#si-ça-ne-marche-pas)). Ce dépôt
+> modifié, donc l'OS officiel restaure toujours la machine ([comment](docs/index.md#si-ca-plante)). Ce dépôt
 > ne contient **aucun firmware Elektron**.
 
 ## Les packs

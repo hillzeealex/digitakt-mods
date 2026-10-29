@@ -1,0 +1,4 @@
+{
+  "about": "Une entrée par fichier .elemod. source = repo@ref amont, url = d'où sync.py le retélécharge, sha256 = le fichier attendu.",
+  "mods": []
+}
